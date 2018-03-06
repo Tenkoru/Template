@@ -1,0 +1,15 @@
+.container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: $container-mobile;
+
+  @media (min-width: $screen-tablet) {
+    width: $container-tablet;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: $container-desktop;
+  }
+}
