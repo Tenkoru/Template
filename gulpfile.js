@@ -5,6 +5,8 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const plumber = require('gulp-plumber');
 const postcss = require('gulp-postcss');
+const posthtml = require("gulp-posthtml");
+const include = require("posthtml-include");
 const autoprefixer = require('autoprefixer');
 const server = require('browser-sync').create();
 const mqpacker = require('css-mqpacker');
@@ -13,11 +15,6 @@ const rename = require('gulp-rename');
 const imagemin = require('gulp-imagemin');
 const rollup = require('gulp-better-rollup');
 const sourcemaps = require('gulp-sourcemaps');
-
-gulp.task('test', function () {
-  return gulp
-    .src(['js/**/*.test.js'], { read: false })
-})
 
 gulp.task('style', function () {
   gulp.src('sass/style.scss')
@@ -36,10 +33,10 @@ gulp.task('style', function () {
       mqpacker({sort: true})
     ]))
     .pipe(gulp.dest('build/css'))
-    .pipe(server.stream())
     .pipe(minify())
     .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('build/css'));
+    .pipe(gulp.dest('build/css'))
+    .pipe(server.stream());
 });
 
 gulp.task('scripts', function () {
@@ -63,7 +60,10 @@ gulp.task('imagemin', ['copy'], function () {
 
 gulp.task('copy-html', function () {
   return gulp.src('*.html')
-    .pipe(gulp.dest('build'))
+    .pipe(posthtml([
+      include()
+    ]))
+    .pipe(gulp.dest("build"))
     .pipe(server.stream());
 });
 
@@ -93,8 +93,8 @@ gulp.task('serve', ['assemble'], function () {
     ui: false
   });
 
-  gulp.watch('sass/**/*.{scss,sass}', ['style']);
-  gulp.watch('*.html', ['copy-html']);
+  gulp.watch('sass/**/*.scss', ['style']);
+  gulp.watch('**/*.html', ['copy-html']);
   gulp.watch('js/**/*.js', ['js-watch']);
 });
 
