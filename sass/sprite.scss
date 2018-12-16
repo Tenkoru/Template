@@ -1,0 +1,200 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$icon-binocular-name: 'icon-binocular';
+$icon-binocular-x: 52px;
+$icon-binocular-y: 117px;
+$icon-binocular-offset-x: -52px;
+$icon-binocular-offset-y: -117px;
+$icon-binocular-width: 50px;
+$icon-binocular-height: 35px;
+$icon-binocular-total-width: 229px;
+$icon-binocular-total-height: 207px;
+$icon-binocular-image: '../img/sprite.png';
+$icon-binocular: (52px, 117px, -52px, -117px, 50px, 35px, 229px, 207px, '../img/sprite.png', 'icon-binocular', );
+$icon-clock-name: 'icon-clock';
+$icon-clock-x: 0px;
+$icon-clock-y: 169px;
+$icon-clock-offset-x: 0px;
+$icon-clock-offset-y: -169px;
+$icon-clock-width: 38px;
+$icon-clock-height: 38px;
+$icon-clock-total-width: 229px;
+$icon-clock-total-height: 207px;
+$icon-clock-image: '../img/sprite.png';
+$icon-clock: (0px, 169px, 0px, -169px, 38px, 38px, 229px, 207px, '../img/sprite.png', 'icon-clock', );
+$icon-communication-name: 'icon-communication';
+$icon-communication-x: 0px;
+$icon-communication-y: 0px;
+$icon-communication-offset-x: 0px;
+$icon-communication-offset-y: 0px;
+$icon-communication-width: 52px;
+$icon-communication-height: 52px;
+$icon-communication-total-width: 229px;
+$icon-communication-total-height: 207px;
+$icon-communication-image: '../img/sprite.png';
+$icon-communication: (0px, 0px, 0px, 0px, 52px, 52px, 229px, 207px, '../img/sprite.png', 'icon-communication', );
+$icon-computer-secure-name: 'icon-computer-secure';
+$icon-computer-secure-x: 0px;
+$icon-computer-secure-y: 62px;
+$icon-computer-secure-offset-x: 0px;
+$icon-computer-secure-offset-y: -62px;
+$icon-computer-secure-width: 50px;
+$icon-computer-secure-height: 45px;
+$icon-computer-secure-total-width: 229px;
+$icon-computer-secure-total-height: 207px;
+$icon-computer-secure-image: '../img/sprite.png';
+$icon-computer-secure: (0px, 62px, 0px, -62px, 50px, 45px, 229px, 207px, '../img/sprite.png', 'icon-computer-secure', );
+$icon-download-name: 'icon-download';
+$icon-download-x: 193px;
+$icon-download-y: 52px;
+$icon-download-offset-x: -193px;
+$icon-download-offset-y: -52px;
+$icon-download-width: 12px;
+$icon-download-height: 14px;
+$icon-download-total-width: 229px;
+$icon-download-total-height: 207px;
+$icon-download-image: '../img/sprite.png';
+$icon-download: (193px, 52px, -193px, -52px, 12px, 14px, 229px, 207px, '../img/sprite.png', 'icon-download', );
+$icon-increase-name: 'icon-increase';
+$icon-increase-x: 60px;
+$icon-increase-y: 62px;
+$icon-increase-offset-x: -60px;
+$icon-increase-offset-y: -62px;
+$icon-increase-width: 42px;
+$icon-increase-height: 42px;
+$icon-increase-total-width: 229px;
+$icon-increase-total-height: 207px;
+$icon-increase-image: '../img/sprite.png';
+$icon-increase: (60px, 62px, -60px, -62px, 42px, 42px, 229px, 207px, '../img/sprite.png', 'icon-increase', );
+$icon-networking-name: 'icon-networking';
+$icon-networking-x: 62px;
+$icon-networking-y: 0px;
+$icon-networking-offset-x: -62px;
+$icon-networking-offset-y: 0px;
+$icon-networking-width: 53px;
+$icon-networking-height: 50px;
+$icon-networking-total-width: 229px;
+$icon-networking-total-height: 207px;
+$icon-networking-image: '../img/sprite.png';
+$icon-networking: (62px, 0px, -62px, 0px, 53px, 50px, 229px, 207px, '../img/sprite.png', 'icon-networking', );
+$icon-pendrive-name: 'icon-pendrive';
+$icon-pendrive-x: 125px;
+$icon-pendrive-y: 0px;
+$icon-pendrive-offset-x: -125px;
+$icon-pendrive-offset-y: 0px;
+$icon-pendrive-width: 58px;
+$icon-pendrive-height: 38px;
+$icon-pendrive-total-width: 229px;
+$icon-pendrive-total-height: 207px;
+$icon-pendrive-image: '../img/sprite.png';
+$icon-pendrive: (125px, 0px, -125px, 0px, 58px, 38px, 229px, 207px, '../img/sprite.png', 'icon-pendrive', );
+$icon-service-name: 'icon-service';
+$icon-service-x: 0px;
+$icon-service-y: 117px;
+$icon-service-offset-x: 0px;
+$icon-service-offset-y: -117px;
+$icon-service-width: 42px;
+$icon-service-height: 42px;
+$icon-service-total-width: 229px;
+$icon-service-total-height: 207px;
+$icon-service-image: '../img/sprite.png';
+$icon-service: (0px, 117px, 0px, -117px, 42px, 42px, 229px, 207px, '../img/sprite.png', 'icon-service', );
+$icon-shield-name: 'icon-shield';
+$icon-shield-x: 193px;
+$icon-shield-y: 0px;
+$icon-shield-offset-x: -193px;
+$icon-shield-offset-y: 0px;
+$icon-shield-width: 36px;
+$icon-shield-height: 42px;
+$icon-shield-total-width: 229px;
+$icon-shield-total-height: 207px;
+$icon-shield-image: '../img/sprite.png';
+$icon-shield: (193px, 0px, -193px, 0px, 36px, 42px, 229px, 207px, '../img/sprite.png', 'icon-shield', );
+$icon-team-name: 'icon-team';
+$icon-team-x: 125px;
+$icon-team-y: 48px;
+$icon-team-offset-x: -125px;
+$icon-team-offset-y: -48px;
+$icon-team-width: 43px;
+$icon-team-height: 43px;
+$icon-team-total-width: 229px;
+$icon-team-total-height: 207px;
+$icon-team-image: '../img/sprite.png';
+$icon-team: (125px, 48px, -125px, -48px, 43px, 43px, 229px, 207px, '../img/sprite.png', 'icon-team', );
+$spritesheet-width: 229px;
+$spritesheet-height: 207px;
+$spritesheet-image: '../img/sprite.png';
+$spritesheet-sprites: ($icon-binocular, $icon-clock, $icon-communication, $icon-computer-secure, $icon-download, $icon-increase, $icon-networking, $icon-pendrive, $icon-service, $icon-shield, $icon-team, );
+$spritesheet: (229px, 207px, '../img/sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
