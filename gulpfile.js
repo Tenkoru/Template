@@ -17,6 +17,7 @@ const rollup = require('gulp-better-rollup');
 const sourcemaps = require('gulp-sourcemaps');
 const spritesmith = require('gulp.spritesmith');
 const merge = require('merge-stream');
+const svgstore = require('gulp-svgstore');
 
 gulp.task('style', function () {
   gulp.src('sass/style.scss')
@@ -41,7 +42,7 @@ gulp.task('style', function () {
     .pipe(server.stream());
 });
 
-gulp.task('sprite' ['svgSprite'], function () {
+gulp.task('sprite', ['svgSprite'], function () {
     // Generate PNG sprite
     var spriteData = gulp.src('img/icons/*.png').pipe(spritesmith({
         imgName: 'sprite.png',
@@ -106,7 +107,8 @@ gulp.task('copy-html', function () {
 gulp.task('copy', ['copy-html', 'scripts', 'style'], function () {
   return gulp.src([
     'fonts/**/*.{woff,woff2}',
-    'img/*.*'
+    'img/*.*',
+    "js/jquery/**"
   ], {base: '.'})
     .pipe(gulp.dest('build'));
 });
@@ -130,7 +132,7 @@ gulp.task('serve', ['assemble'], function () {
   });
 
   gulp.watch('sass/**/*.scss', ['style']);
-  gulp.watch(['*.html', 'html_modules/*.html'], ['copy-html']);
+  gulp.watch('**/*.html', ['copy-html']);
   gulp.watch('js/**/*.js', ['js-watch']);
 });
 
