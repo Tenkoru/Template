@@ -1,11 +1,24 @@
-$screen-mobile:               320px;
-$screen-tablet:               768px;
-$screen-desktop:              1250px;
+$screen-xxs:									360px;
+$screen-xs:										575px;
+$screen-mobile:               639px;
+$screen-mobile-lg:						767px;
+$screen-tablet:               1025px;
+$screen-desktop:              1279px;
+$screen-xl:										1365px;
+$screen-xxl:									1919px;
 
-$container-mobile:            260px;
-$container-tablet:            688px;
-$container-desktop:           1050px;
+$container-xs-min:						280px;
+$container-xs-max:						540px;
+$container-mobile-min:        540px;
+$container-mobile-max:        600px;
+$container-mobile:     		    600px;
+$container-mobile-lg:         728px;
+$container-tablet:            960px;
+$container-desktop:           1205px;
+$container-xl:								1285px;
+$container-xxl: 							1600px;
 
 $color-black:                 #000000;
 $color-white:                 #ffffff;
 
+$font-family1:								'OpenSans', sans-serif;

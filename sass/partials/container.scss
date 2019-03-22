@@ -2,14 +2,90 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  position: relative;
+  z-index: 30;
 
-  width: $container-mobile;
+  width: $container-xxl;
 
-  @media (min-width: $screen-tablet) {
+  @media (max-width: $screen-xxl) {
+    width: $container-xl;
+  }
+  @media (max-width: $screen-xl) {
+    width: $container-desktop;
+  }
+  @media (max-width: $screen-desktop) {
     width: $container-tablet;
   }
+  @media (max-width: $screen-tablet) {
+    width: $container-mobile-lg;
+  }
+  @media (max-width: $screen-mobile-lg) {
+    width: $container-mobile;
+  }
+  @media (max-width: $screen-mobile) {
+    width: auto;
+    max-width: $container-mobile-max;
+    min-width: $container-mobile-min;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media (max-width: $screen-xs) {
+    width: 100%;
+    max-width: $container-xs-max;
+    min-width: $container-xs-min;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 
-  @media (min-width: $screen-desktop) {
-    width: $container-desktop;
+.container--shorter {
+  width: 1280px;
+  padding-right: 0;
+  padding-left: 0;
+  @media (max-width: $screen-xxl) {
+    width: 1120px;
+  }
+  @media (max-width: $screen-xl) {
+    width: 1070px;
+  }
+  @media (max-width: $screen-desktop) {
+    width: 855px;
+  }
+  @media (max-width: $screen-tablet) {
+    width: 685px;
+  }
+}
+.container--form {
+  width: 640px;
+  padding-right: 0;
+  padding-left: 0;
+  @media (max-width: $screen-xxl) {
+    width: 520px;
+  }
+  @media (max-width: $screen-xl) {
+    width: 521px;
+  }
+  @media (max-width: $screen-desktop) {
+    width: 510px;
+  }
+  @media (max-width: $screen-tablet) {
+    width: 450px;
+  }
+  @media (max-width: $screen-mobile-lg) {
+    width: 535px;
+  }
+  @media (max-width: $screen-mobile) {
+    width: 510px;
+    max-width: none;
+    min-width: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @media (max-width: $screen-xs) {
+    width: 320px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
